@@ -1,0 +1,149 @@
+:root {
+    --font-title: 'Poppins', sans-serif;
+    --font-body: 'Roboto', sans-serif;
+    --black: #000000;
+    --grey-text: #888888;
+  }
+  
+  body {
+    background-color: #F6F6F6;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  
+  .top-part {
+    z-index: 20;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 155px;
+    padding-right: 72px;
+    display: flex;
+padding-top: 5px;
+    position: fixed;
+    inset: 32px 0% auto;
+    
+
+    animation: fadeIn 1s ease forwards; /* Apply fadeIn animation on page load */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+     
+    }
+    to {
+      opacity: 1;
+     
+    }
+  }
+  
+
+  .top-part-background {
+    z-index: 22;
+    background-color: #F5F5F5;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 185px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.4);
+    padding: 2px;
+    display: flex;
+
+    
+    position: fixed;
+    inset: 30px 0% auto;
+ 
+  }
+  
+  /* Website logo styles */
+  .website-logo {
+    background-image: url('Screenshot_2024-12-19_145828-removebg-preview.png');
+   background-position: center;
+   background-size: cover;
+background-size: 120%;
+background-repeat: no-repeat;
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+    width: 3.5vw;
+    height: 3.5vw;
+  
+  }
+  
+  
+  
+
+
+/* Shared styles for work and social content */
+#content-work, #content-social {
+  opacity: 1; /* Initially hidden */
+  visibility: visible; /* Prevent interaction when hidden */
+  transition: opacity 0.5s ease, visibility 0.5s ease, z-index 0s linear;
+  z-index: -1; /* Ensure it's behind the active content */
+  text-align: center;
+  animation: fadeIn 1s ease forwards; /* Apply fadeIn animation on page load */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+   
+  }
+}
+
+
+/* Active state for visible content */
+#content-work.active, #content-social.active {
+  display: block;
+  z-index: 10; /* Ensure it is on top when active */
+}
+
+/* Hidden state */
+#content-work.hidden, #content-social.hidden {
+  
+  z-index: -1; /* Ensure it goes behind the other content */
+}
+
+
+
+
+::-webkit-scrollbar {
+  background: transparent;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.5);
+
+
+}
+
+::-webkit-scrollbar-track {
+  background: transparent ;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.5);
+
+
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(149, 149, 149, 0.5); 
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(149, 149, 149, 0.8);  
+}
+
+@keyframes appear{
+  from{
+    opacity: 0;;
+  }
+  to{
+  opacity: 1;
+  }
+}

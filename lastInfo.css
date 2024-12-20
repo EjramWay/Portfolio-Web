@@ -1,0 +1,37 @@
+.info {
+    position: absolute;
+    width: 100%;
+    bottom: -168%;
+    height: 30vh;
+    display: flex;
+    justify-content: center; /* Horizontally center the .socials container */
+    align-items: center; /* Vertically center the .socials container */
+    background-color: #F1F1F1;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2); 
+    margin-top:1%; 
+  }
+
+  .socials {
+   
+    display: grid;
+    grid-template-columns: repeat(3, 8%); /* 3 equal-width columns */
+    gap: 55%;
+    justify-items: center; /* Center items horizontally within their grid cells */
+    align-items: center; /* Center items vertically within their grid cells */
+  }
+  
+
+  #instagram-logo, #linkedin-logo, #facebook-logo{
+    font-size: 40px;
+  }
+
+  #instagram-logo:hover, #linkedin-logo:hover, #facebook-logo:hover{
+    scale: 105%;
+    transition: 0.3s linear;
+  }
+
+  .copywrite {
+    font-family: var(--font-body);
+    position: absolute;
+    bottom: 14%;
+  }

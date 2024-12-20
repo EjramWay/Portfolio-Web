@@ -1,0 +1,86 @@
+.img-1 {
+
+width: 28%;
+height: 57vh;
+background-image: url('WhatsApp Image 2024-12-20 at 18.27.03_c708ff58.jpg');
+background-position: center;
+background-size: cover;
+position: absolute;
+left: 50%;
+box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.4);
+transform: translateX(-50%);
+top: 10%;
+border-radius: 12px;
+animation: top linear 0.3s;
+}
+
+.img-2{
+    z-index: -1;
+    background-image: url('WhatsApp Image 2024-12-20 at 18.28.21_fb7745b0.jpg');
+    background-position: center;
+    background-size: cover;
+width: 28%;
+height: 51vh;
+position: absolute;
+left: 31%;
+box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.4);
+transform: translateX(-50%);
+border-radius: 12px;
+top: 12.5%;
+animation: right ease-in-out 0.5s;
+transition: right ease-in-out 0.5s;
+
+}
+
+.img-3{
+    z-index: -1;
+
+    width: 28%;
+height: 51vh;
+box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.4);
+position: absolute;
+right:  17%;
+background-image: url('WhatsApp Image 2024-12-20 at 18.18.17_feeb3f30.jpg');
+background-position: center;
+background-size: cover;
+border-radius: 12px;
+top: 12.5%;
+animation: left ease-in-out 0.5s;
+transition: left ease-in-out 0.5s;
+}
+
+@keyframes right {
+    from{
+        left: 45%;
+        transform: translateX(-50%);
+    } 
+    to{
+        left: 31%;
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes left {
+    from{
+        right:  31%;
+        
+    } 
+    to{
+        right: 17%;
+        
+    }
+
+
+}
+
+@keyframes top{
+    from{
+        top: 0;
+        
+    } 
+    to{
+        top: 10%;
+        
+    }
+
+}
