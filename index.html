@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,92 +11,117 @@
     <link rel="stylesheet" href="title_location.css">
     <link rel="stylesheet" href="social-work-section.css">
     <link rel="stylesheet" href="lastInfo.css">
+    <link rel="stylesheet" href="card-1.css">
+ 
+ <link rel="stylesheet" href="chart.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
+
 <body>
 
-<div class="top-part-background">
-    <div class="top-part">
-        <div class="website-logo"></div> 
-        <div class="work-social">
-            <button id="work" class="work">work</button>
-            <button id="social" class="social">social</button>
-        </div>  
-    
-        <button id="more-button" class="more-button">
-            <svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000">
-                <path d="M3 5H21" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                <path d="M3 12H21" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                <path d="M3 19H21" stroke="#000000" id='more-icon' stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-            </svg>
-        </button>
-        <div id="more-section" class="more-section">
-            <button id='home' class='home'>
-                <img src="https://cdn.prod.website-files.com/5e1689facb9d5168c0dcbe0b/5fd51b0d34b9d09283ff00d2_House.svg" loading="lazy" width="24" height="24" alt="" class="menu-item-icon">
-                <div class="menu-item-text">home</div>
-            </button>
-            <a href="aboutpage/about.html">
+    <div class="top-part-background">
+        <div class="top-part">
+            <div class="website-logo"></div>
+            <div class="work-social">
+                <button id="work" class="work">Work</button>
+                <button id="social" class="social">Social</button>
+            </div>
 
-            <button id='about' class='about'>
-                <img src="https://cdn.prod.website-files.com/5e1689facb9d5168c0dcbe0b/5fd51b1353c1a180dbc8beb4_User.svg" loading="lazy" width="24" height="24" alt="" class="menu-item-icon">
-                <div class="menu-item-text">about</div>
+            <button id="more-button" class="more-button">
+                <svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000">
+                    <path d="M3 5H21" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M3 12H21" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M3 19H21" stroke="#000000" id="more-icon" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
             </button>
-        </a>
+
+            <div id="more-section" class="more-section">
+                <button id="home" class="home">
+                    <img src="https://cdn.prod.website-files.com/5e1689facb9d5168c0dcbe0b/5fd51b0d34b9d09283ff00d2_House.svg" loading="lazy" width="24" height="24" alt="" class="menu-item-icon">
+                    <div class="menu-item-text">Home</div>
+                </button>
+
+                <a href="aboutpage/about.html">
+                    <button id="about" class="about">
+                        <img src="https://cdn.prod.website-files.com/5e1689facb9d5168c0dcbe0b/5fd51b1353c1a180dbc8beb4_User.svg" loading="lazy" width="24" height="24" alt="" class="menu-item-icon">
+                        <div class="menu-item-text">About</div>
+                    </button>
+                </a>
+            </div>
         </div>
     </div>
-</div>
 
-<div id="title" class="title">hi, i'm Bilal</div>
+    <div id="title" class="title">Hi, I'm Bilal</div>
 
-<div class="location">
-    <img src="https://cdn.prod.website-files.com/5e1689facb9d5168c0dcbe0b/5fd67d88e589fa52700f6034_MapPin.svg" loading="lazy" width="24" height="24" alt="" class="location-icon">
-    <div id="location-text" class="location-text">India, Maharastra, Pune</div> 
-</div>
+    <div class="location">
+        <img src="https://cdn.prod.website-files.com/5e1689facb9d5168c0dcbe0b/5fd67d88e589fa52700f6034_MapPin.svg" loading="lazy" width="24" height="24" alt="" class="location-icon">
+        <div id="location-text" class="location-text">India, Maharashtra, Pune</div>
+    </div>
 
-<div class="short-about">
-    a 16-year-old coder, loves peace, nature, and cats, <br> mastering AI, web dev, and tech.
-</div>
+    <div class="short-about">
+        A 16-year-old coder, loves peace, nature, and cats, <br> mastering AI, web development, and tech.
+    </div>
 
-<div id="content-work" class="content-work">
-    <div class="card1"></div>
-    <div class="card2"></div>
-    <div class="card3"></div>
+    <div id="project-text" class="project-text">Projects
+        <svg width="38px" height="38px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000">
+            <path d="M12 6C10.8954 6 10 5.10457 10 4C10 2.89543 10.8954 2 12 2C13.1046 2 14 2.89543 14 4C14 5.10457 13.1046 6 12 6Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M12 9L12 22M12 22L15 19M12 22L9 19" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+    </div>
+
+
+    
+
+    <div id="content-work" class="content-work">
+        <div class="card1">
+            <div class="skill-text">Skills </div>
+            <div class="chart">
+                <canvas id="skills_chart"></canvas>
+              </div>
+              
+             
+    </div>
+
+    <div class="card2">
+        <!-- Additional content for card2 goes here -->
+    </div>
+
     <div class="projects">
-       
-        <div class="project-card1 project-card"></div>
-        <div class="project-card2 project-card"></div>
-        <div class="project-card3 project-card"></div>
-        <div class="project-card4 project-card"></div>
-        <div class="project-card5 project-card"></div>
+        <a class="project-card1 project-card" href="https://ejramway.github.io/Dead-Pixel-Test/"></a>
+        <a class="project-card2 project-card"></a>
+        <a class="project-card3 project-card" href="https://ejramway.github.io/Static-Netflix-Concept/"></a>
+        <a class="project-card4 project-card" href="https://ejramway.github.io/Static-Netflix-Concept/"></a>
+        <a class="project-card5 project-card" href="https://ejramway.github.io/Guess-The-Number/compMode.html"></a>
 
+        <a class="project-card1 project-card" href="https://ejramway.github.io/Dead-Pixel-Test/"></a>
+        <a class="project-card2 project-card"></a>
+        <a class="project-card3 project-card" href="https://ejramway.github.io/Static-Netflix-Concept/"></a>
+        <a class="project-card4 project-card" href="https://ejramway.github.io/Static-Netflix-Concept/"></a>
+        <a class="project-card5 project-card" href="https://ejramway.github.io/Guess-The-Number/compMode.html"></a>
+    </div>
 
-        <div class="project-card1 project-card"></div>
-        <div class="project-card2 project-card"></div>
-        <div class="project-card3 project-card"></div>
-        <div class="project-card4 project-card"></div>
-        <div class="project-card5 project-card"></div>
-   
-    </div>   
-</div>
+    <div id="content-social" class="content-social">
+        <!-- Social content goes here -->
+    </div>
 
+    <div class="info" id="info">
+        <div class="socials">
+            <a id="facebook" href="#"><i id="facebook-logo" class="fa-brands fa-facebook"></i></a>
+            <a id="instagram" href="#"><i id="instagram-logo" class="fa-brands fa-instagram"></i></a>
+            <a id="linkedin" href="#"><i id="linkedin-logo" class="fa-brands fa-linkedin"></i></a>
+        </div>
 
-<div id="content-social" class="content-social">
-    <!-- Social content goes here -->
-</div>
+        <div class="copywrite">Copyright © 2024 Bilal Rukundi. All rights reserved.</div>
+    </div>
 
-<div class="info">
+    <script src="index.js"></script>
 
-<div class="socials">
-    <a id="facebook"><i id="facebook-logo"   class="fa-brands fa-facebook"></i></a>
-    <a id="instagram"><i   id="instagram-logo" class="fa-brands fa-instagram"></i></a>
-    <a id="linkedin"><i id="linkedin-logo"   class="fa-brands fa-linkedin"></i></a>
-</div>
+<!-- Include Chart.js first -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 
-<div class="copywrite">Copyright © 2024 Bilal Rukundi. All rights reserved.</div>
-
-</div>
+<!-- Include your custom chart.js script -->
+<script src="chart.js"></script>
 
 </body>
-<script src="index.js"></script>
 
 </html>

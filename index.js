@@ -2,6 +2,12 @@ document.addEventListener('DOMContentLoaded', () => {
     changeContent('work'); // Load 'work' content initially
 });
 
+
+document.addEventListener('DOMContentLoaded', () => {
+    
+});
+
+
 const workButton = document.getElementById("work");
 const socialButton = document.getElementById("social");
 const title = document.getElementById("title");
@@ -9,7 +15,9 @@ const workContent = document.getElementById('content-work');
 const socialContent = document.getElementById('content-social');
 const moreButton = document.getElementById('more-button');
 const moreMenu = document.getElementById('more-section');
-const aboutMe = document.getElementById('about'); // Correct reference to About section
+const aboutMe = document.getElementById('about');
+const credit = document.getElementById('info')
+const project_text = document.getElementById('project-text')
 
 function changeContent(type) {
     if (type === 'work') {
@@ -24,6 +32,8 @@ function changeContent(type) {
         title.classList.add('animate');
 
         // Update button styles
+
+        credit.style.cssText = 'bottom: -180%;';
 
         socialButton.style.cssText = 'background-color: transparent; color: rgba(0, 0, 0, 0.5)'
 
@@ -47,6 +57,9 @@ workButton.style.cssText = "box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.5); bac
         void title.offsetWidth; // Trigger reflow to restart the animation
         title.classList.add('animate');
 
+
+          credit.style.cssText = 'bottom: -80%;';
+          project_text.classList.add('hidden')
         
 
         // Update button styles
@@ -66,6 +79,8 @@ socialButton.style.cssText = "box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.5); b
 // Add event listeners for button clicks
 workButton.addEventListener('click', () => changeContent('work'));
 socialButton.addEventListener('click', () => changeContent('social'));
+
+
 
 
 moreButton.addEventListener('click', () => {

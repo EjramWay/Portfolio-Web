@@ -1,36 +1,38 @@
 .card1 {
-    position: absolute;
-    top: 75%; 
-    left: 20%;
-    width: 100%;
-    min-width: 900px;
-    max-width: 1000px;
-    height: 440px;
-    background-color: #F6F6F6;
-    border: none;
-    border-radius: 20px;
-    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.5);
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-    
-  }
+  position: absolute;
+  top: 75%; 
+  left: 22%;
+  width: 60%;
+  height: 440px;
+  background-color: #eceff1;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.5);
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+  z-index: 1; /* Set card1 to be on top */
+}
+
   
   .card2 {
     position: absolute;
-    top: 150%; 
-    left: 20%;
-    width: 100%;
-    min-width: 900px;
-    max-width: 1000px;
+    top: 152%; 
+    left: 11%;
+    width:80%;
+    
+    background-color: #eceff1;
     height: 440px;
-    background-color: #F6F6F6;
+    background-image: url('mainpage\ProjectCardImages\deadpixel.png');
+    background-position: center;
+    background-size: cover;
     border: none;
     border-radius: 20px;
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.5);
     animation: appear linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
+
   }
   
 
@@ -38,11 +40,11 @@
     display: flex;
 gap: 5%;
     position: absolute;
-    bottom: -130%; 
+    bottom: -146%; 
     width: calc(25% * 10);
-    height: 13vh;
-    background-color: #F6F6F6;
- 
+    height: 18vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
     animation: appear linear;
     animation-timeline: view();
     animation-range: entry 0% cover 10%;
@@ -53,6 +55,10 @@ gap: 5%;
     
   }
 
+
+  .hidden2 {
+display: none;
+  }
 
 
   @keyframes slider{
@@ -68,8 +74,10 @@ transform: translateX(calc(-12% * 5));
   .project-card1 {
     
 
-    height: 13vh;
-    
+
+    background-image: url('../mainpage/ProjectCardImages/deadpixel.png');
+    background-position: center;
+    background-size: cover;
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
     animation: slider 0.3 linear;
     
@@ -78,38 +86,47 @@ transform: translateX(calc(-12% * 5));
 
   .project-card2 {
   
-    height: 13vh;
-   
+
+    background-image: url('../mainpage/ProjectCardImages/Intro.png');
+    background-position: center;
+    background-size: cover;
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
   }
 
   .project-card3 {
  
-    height: 13vh;
-    
+
+    background-image: url('../mainpage/ProjectCardImages/netflix.png');
+    background-position: center;
+    background-size: cover;
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
   }
 
   .project-card4 {
  
-    height: 13vh;
-    
+
+    background-image: url('../mainpage/ProjectCardImages/netflix2.png');
+    background-position: center;
+    background-size: cover;
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
   }
 
   
   .project-card5 {
- 
-    height: 13vh;
-    
+
+   background-image: url('../mainpage/ProjectCardImages/guesstheno.png');
+    background-position: center;
+    background-size: cover;
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
-  }
+}
+
 
   .project-card{
     width: 100%;
+    height: 15vh;
 transition: 0.3s ease-in-out;
 box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
-background-color: #474747;
+margin-top: 0.3%;
 border-radius: 10px;
   }
 
@@ -123,4 +140,14 @@ scale: 120%;
     animation-play-state: paused; /* Stop the animation when hovering over a project card */
   }
 
+
+  .project-text {
+    position: absolute;
+    bottom: -125.5%; 
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+    font-family: sans-serif;
+    font-size: 45px;
+  }
  

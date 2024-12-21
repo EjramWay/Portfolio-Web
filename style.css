@@ -22,6 +22,7 @@
     padding-right: 72px;
     display: flex;
 padding-top: 5px;
+font-family: var(--font-body);
     position: fixed;
     inset: 32px 0% auto;
     
@@ -47,10 +48,10 @@ padding-top: 5px;
     border-radius: 30px;
     justify-content: center;
     align-items: center;
-    width: 185px;
-    height: 60px;
+    width: 155px;
+    height: 56px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;font-family: var(--font-body);
 
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.4);
     padding: 2px;
@@ -147,3 +148,6 @@ background-repeat: no-repeat;
   opacity: 1;
   }
 }
+
+
+

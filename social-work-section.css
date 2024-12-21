@@ -26,12 +26,12 @@
   .work {
     position: fixed;
     margin-left: 0.2%;
-    margin-top: 0.2%;
+    margin-top: 0.1%;
     border-radius: 50px;
     width: 5.5vw;
     height: 7.1vh;
     color: black;
-    font-size: 24px;
+    font-size: 20px;
     border: none;
     text-align: center;
     display: flex;
@@ -49,10 +49,10 @@
   .social {
     position: fixed;
     margin-left: 6.2%;
-    margin-top: 0.2%;
+    margin-top: 0.1%;
     border-radius: 50px;
     color: black;
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
     width: 5.5vw;
     height: 7.1vh;
