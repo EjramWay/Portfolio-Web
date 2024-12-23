@@ -1,0 +1,69 @@
+/* main-more container styles */
+.main-more {
+    width: 10.8vw;
+    height: 4vw;
+    position: fixed;
+    left: 44%;
+    font-family: var(--font-body);
+    font-weight: 550;
+    border-radius: 50px;
+    padding: auto;
+
+    
+  }
+  
+/* Define hidden and active classes */
+.hidden {
+  display: none;
+}
+
+.active {
+  display: block; /* Or use flex/grid depending on layout */
+}
+
+
+  /* main button styles */
+  .main {
+    position: fixed;
+    margin-left: 1%;
+    margin-top: 0.2%;
+    border-radius: 50px;
+    width: 5.1vw;
+    height: 6.1vh;
+    color: black;
+    font-size: 20px;
+    border: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+    cursor: pointer;
+    
+  }
+
+  .main:hover {
+   background-color: red; }
+  
+  /* more button styles */
+  .more {
+    position: fixed;
+    margin-left: 5.8%;
+    margin-top: 0.2%;
+    border-radius: 50px;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    width: 5.1vw;
+    height: 6.1vh;
+    display: flex;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+    cursor: pointer;
+  }
+
+  .more:hover {
+    background-color: red;
+  }

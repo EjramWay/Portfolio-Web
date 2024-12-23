@@ -12,6 +12,7 @@ transform: translateX(-50%);
 top: 10%;
 border-radius: 12px;
 animation: top linear 0.3s;
+
 }
 
 .img-2{
@@ -30,12 +31,13 @@ top: 12.5%;
 animation: right ease-in-out 0.5s;
 transition: right ease-in-out 0.5s;
 
+
 }
 
 .img-3{
     z-index: -1;
 
-    width: 28%;
+width: 28%;
 height: 51vh;
 box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.4);
 position: absolute;
@@ -47,6 +49,7 @@ border-radius: 12px;
 top: 12.5%;
 animation: left ease-in-out 0.5s;
 transition: left ease-in-out 0.5s;
+
 }
 
 @keyframes right {
@@ -84,3 +87,4 @@ transition: left ease-in-out 0.5s;
     }
 
 }
+

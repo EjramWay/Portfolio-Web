@@ -1,0 +1,62 @@
+.content-work .title,
+.content-social .title {
+  font-family: var(--font-title);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 140%;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  margin: 0 0 12px 0;
+  transition: background-image 0.5s ease;
+  width: 100%;
+ z-index: 9999;
+}
+
+.content-work .location,
+.content-social .location {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 9999;
+}
+
+.content-work .short-about,
+.content-social .short-about {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+  font-family: var(--font-body);
+  color: black;
+  text-align: center;
+  width: 100%;
+  z-index: 9999;
+}
+
+/* Keep existing animations */
+.title.animate {
+  animation: fadeInTitle 0.3s ease;
+}
+
+@keyframes fadeInTitle {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -20%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}

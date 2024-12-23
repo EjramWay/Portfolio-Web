@@ -1,0 +1,157 @@
+.background-decoration {
+    position: absolute;
+    width: 50vw;
+    height: 70vh;
+    background-color: rgba(178, 190, 181, 0.3);
+    border-radius: 0% 100% 100% 0% / 0% 0% 100% 100%;
+    top: 0;
+    animation: background-hover 10s ease 0s 1 normal forwards;
+}
+
+.background-overlay {
+    position: absolute;
+    right: 0;
+    top: 29.8%;
+    width: 50vw;
+    height: 70vh;
+  
+    border-radius: 100% 0% 0% 100% / 100% 0% 100% 0%;
+    animation: fade-out 0.3s linear;
+    animation-timeline: view();
+    animation-range: entry 100% cover 40%;
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 100%;
+    }
+    to {
+        opacity: 0%;
+    }
+}
+
+.background-decoration-left:hover {
+    animation: background-hover 2s ease 0s 1 normal forwards;
+}
+
+@keyframes background-hover {
+    0% {
+        transform: translate(0);
+    }
+
+    10% {
+        transform: translate(-2px, -2px);
+    }
+
+    20% {
+        transform: translate(2px, -2px);
+    }
+
+    30% {
+        transform: translate(-2px, 2px);
+    }
+
+    40% {
+        transform: translate(2px, 2px);
+    }
+
+    50% {
+        transform: translate(-2px, -2px);
+    }
+
+    60% {
+        transform: translate(2px, -2px);
+    }
+
+    70% {
+        transform: translate(-2px, 2px);
+    }
+
+    80% {
+        transform: translate(-2px, -2px);
+    }
+
+    90% {
+        transform: translate(2px, -2px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+
+body::before {
+    mask-image: url(bj.gif);
+    mask-position: center;
+    mask-size: cover;
+}
+
+/* Main content styling */
+.content-wrapper {
+    position: relative;
+    z-index: 1;
+  }
+  
+
+@font-face{
+    font-family: bjFont;
+    src: url(Panchang-Variable.ttf);
+}
+
+  .trial {
+    font-size: 300px;
+    font-family: bjFont;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    z-index: -1;
+    color: rgba(0, 0, 0, 0.10);
+    
+    animation: fadeOutOnLoad 1s ease-out;
+  }
+  
+.page-mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    z-index: 9999;
+    mask-image: url(bj.gif);
+    -webkit-mask-image: url(bj.gif);
+    mask-position: center;
+    -webkit-mask-position: center;
+    mask-size: cover;
+    -webkit-mask-size: cover;
+}
+
+Hide content initially 
+body > *:not(.page-mask) {
+    opacity: 0;
+}
+
+
+body.loading {
+    overflow: hidden;
+}
+
+
+body.loaded > *:not(.page-mask) {
+    opacity: 1;
+    transition: opacity 1s ease-out;
+}
+
+
+.top-part {
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 1s;
+}
+
+#content-work, #content-social {
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 1s;
+}

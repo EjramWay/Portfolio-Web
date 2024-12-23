@@ -4,27 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="MoreSection.css">
-    <link rel="stylesheet" href="cards.css">
-    <link rel="stylesheet" href="title_location.css">
-    <link rel="stylesheet" href="social-work-section.css">
-    <link rel="stylesheet" href="lastInfo.css">
-    <link rel="stylesheet" href="card-1.css">
- 
- <link rel="stylesheet" href="chart.css">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="main-styles.css">
+    <link rel="stylesheet" href="additional-sections.css">
+    <link rel="stylesheet" href="card-styles.css">
+    <link rel="stylesheet" href="header-layout.css">
+    <link rel="stylesheet" href="footer-section.css">
+    <link rel="stylesheet" href="main-more-section.css">
+    <link rel="stylesheet" href="background-styles.css">
+    <link rel="stylesheet" href="chart-styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="more.css">
 </head>
 
 <body>
 
+    <div class="content-wrapper">
+        <!-- Your existing content -->
+    </div>
+
+    <div id="background-decoration" class="background-decoration"></div>
+    <div  id="background-overlay"  class="background-overlay"></div>
+
     <div class="top-part-background">
         <div class="top-part">
             <div class="website-logo"></div>
-            <div class="work-social">
-                <button id="work" class="work">Work</button>
-                <button id="social" class="social">Social</button>
+            <div class="main-more">
+                <button id="work" class="main">Main</button>
+                <button id="social" class="more">More</button>
             </div>
 
             <button id="more-button" class="more-button">
@@ -51,6 +58,9 @@
         </div>
     </div>
 
+<div id="content-work" class="content-work">
+
+    <div class="trial">Hi There</div>
     <div id="title" class="title">Hi, I'm Bilal</div>
 
     <div class="location">
@@ -62,18 +72,74 @@
         A 16-year-old coder, loves peace, nature, and cats, <br> mastering AI, web development, and tech.
     </div>
 
-    <div id="project-text" class="project-text">Projects
-        <svg width="38px" height="38px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000">
+
+    <div id="project-text-slider"   class="project-text-slider">
+        <!-- First set of text items -->
+        <div class="project-text">
+          Projects
+          <svg width="38px" height="38px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000">
             <path d="M12 6C10.8954 6 10 5.10457 10 4C10 2.89543 10.8954 2 12 2C13.1046 2 14 2.89543 14 4C14 5.10457 13.1046 6 12 6Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
             <path d="M12 9L12 22M12 22L15 19M12 22L9 19" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-        </svg>
-    </div>
-
-
+          </svg>
+          | More To Come
+        </div>
+        <div class="project-text">
+          Projects
+          <svg width="38px" height="38px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000">
+            <path d="M12 6C10.8954 6 10 5.10457 10 4C10 2.89543 10.8954 2 12 2C13.1046 2 14 2.89543 14 4C14 5.10457 13.1046 6 12 6Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M12 9L12 22M12 22L15 19M12 22L9 19" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+          | More To Come
+        </div>
+        <div class="project-text">
+          Projects
+          <svg width="38px" height="38px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000">
+            <path d="M12 6C10.8954 6 10 5.10457 10 4C10 2.89543 10.8954 2 12 2C13.1046 2 14 2.89543 14 4C14 5.10457 13.1046 6 12 6Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M12 9L12 22M12 22L15 19M12 22L9 19" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+          | More To Come
+        </div>
+        <div class="project-text">
+          Projects
+          <svg width="38px" height="38px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000">
+            <path d="M12 6C10.8954 6 10 5.10457 10 4C10 2.89543 10.8954 2 12 2C13.1046 2 14 2.89543 14 4C14 5.10457 13.1046 6 12 6Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M12 9L12 22M12 22L15 19M12 22L9 19" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+          | More To Come
+        </div>
+      
+        <!-- Duplicate the same set of text items for seamless looping -->
+        <div class="project-text">
+          Projects
+          <svg width="38px" height="38px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000">
+            <path d="M12 6C10.8954 6 10 5.10457 10 4C10 2.89543 10.8954 2 12 2C13.1046 2 14 2.89543 14 4C14 5.10457 13.1046 6 12 6Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M12 9L12 22M12 22L15 19M12 22L9 19" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+          | More To Come
+        </div>
+        <div class="project-text">
+          Projects
+          <svg width="38px" height="38px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000">
+            <path d="M12 6C10.8954 6 10 5.10457 10 4C10 2.89543 10.8954 2 12 2C13.1046 2 14 2.89543 14 4C14 5.10457 13.1046 6 12 6Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M12 9L12 22M12 22L15 19M12 22L9 19" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+          | More To Come
+        </div>
+        <div class="project-text">
+          Projects
+          <svg width="38px" height="38px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000">
+            <path  d="M12 6C10.8954 6 10 5.10457 10 4C10 2.89543 10.8954 2 12 2C13.1046 2 14 2.89543 14 4C14 5.10457 13.1046 6 12 6Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M12 9L12 22M12 22L15 19M12 22L9 19" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+          | More To Come
+        </div>
+      </div>
+      
     
 
-    <div id="content-work" class="content-work">
+      <div class="trial2">Skills</div>
         <div class="card1">
+    
             <div class="skill-text">Skills </div>
             <div class="chart">
                 <canvas id="skills_chart"></canvas>
@@ -83,8 +149,9 @@
     </div>
 
     <div class="card2">
-        <!-- Additional content for card2 goes here -->
+        
     </div>
+
 
     <div class="projects">
         <a class="project-card1 project-card" href="https://ejramway.github.io/Dead-Pixel-Test/"></a>
@@ -100,9 +167,8 @@
         <a class="project-card5 project-card" href="https://ejramway.github.io/Guess-The-Number/compMode.html"></a>
     </div>
 
-    <div id="content-social" class="content-social">
-        <!-- Social content goes here -->
-    </div>
+
+
 
     <div class="info" id="info">
         <div class="socials">
@@ -113,6 +179,36 @@
 
         <div class="copywrite">Copyright © 2024 Bilal Rukundi. All rights reserved.</div>
     </div>
+</div>     </div>     </div>     </div>    </div>
+
+
+<div id="content-social" class="content-social">
+    <div class="title-section">
+        <div class="title">Hi, I'm Bilal</div>
+    
+        <div class="location">
+            <img src="https://cdn.prod.website-files.com/5e1689facb9d5168c0dcbe0b/5fd67d88e589fa52700f6034_MapPin.svg" loading="lazy" width="24" height="24" alt="" class="location-icon">
+            <div class="location-text">India, Maharashtra, Pune</div>
+        </div>
+    
+        <div class="short-about">
+            A 16-year-old coder, loves peace, nature, and cats, <br> mastering AI, web development, and tech.
+        </div>
+    </div>
+    
+    <div class="box"></div>
+
+    <div class="info">
+        <div class="socials">
+            <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+
+        <div class="copywrite">Copyright © 2024 Bilal Rukundi. All rights reserved.</div>
+    </div>
+</div>
+
 
     <script src="index.js"></script>
 
@@ -122,6 +218,11 @@
 <!-- Include your custom chart.js script -->
 <script src="chart.js"></script>
 
+
+
+
 </body>
+
+
 
 </html>

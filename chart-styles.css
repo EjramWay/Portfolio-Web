@@ -1,0 +1,22 @@
+.chart {
+    position: absolute;
+    left: 56%;
+    transform: translateX(-50%);
+    top: 15%;
+    width: 100%;
+    z-index: 9999;
+    height: 80%;
+  }
+  
+
+  .skill-text {
+    font-size: 34px;
+    font-weight: 600;
+    font-family: sans-serif;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 3%;
+    z-index: 9999;
+
+  }
