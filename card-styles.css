@@ -17,18 +17,15 @@
   
   .card2 {
     position: absolute;
-    top: 140%; 
-    left: 22%;
-    width:55%;
-    
-    background-color: #eceff1;
+    top: 137%; 
+    width:90%;
+    z-index: 9999; /* Set card1 to be on top */
     height: 440px;
-    background-image: url('mainpage\ProjectCardImages\deadpixel.png');
+    left: 5.5%;
     background-position: center;
     background-size: cover;
     border: none;
     border-radius: 20px;
-    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.5);
     animation: appear linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
@@ -48,7 +45,7 @@ gap: 5%;
     animation-timeline: view();
     animation-range: entry 0% cover 10%;
     animation: slider 20s linear infinite;
-  
+    z-index: 9999; /* Set card1 to be on top */
       animation-play-state: running; /* Stop the animation when hovering over a project card */
   
     
@@ -144,7 +141,7 @@ scale: 120%;
     gap: 10%;
     text-align: center;
     justify-content: center;
-    margin-top: 103.5%;
+    margin-top: 98%;
     font-size: 25px;
     white-space: nowrap;
     height: 6vh;

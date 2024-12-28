@@ -1,0 +1,65 @@
+
+.land-text {
+    font-size: 260px;
+    font-family: bjFont;
+    position: absolute;
+    left: 50%;
+    top: 14%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    z-index: -1;
+    color: rgba(0, 0, 0, 0.10);
+    
+    animation: appear 0.3s linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+  }
+
+  .skill-bj-text{
+    position: absolute;
+    left: 50%;
+    top: 62%;
+    transform: translateX(-50%);
+    position: absolute;
+    font-size: 480px;
+
+    color: rgba(0, 0, 0, 0.2);
+    font-family: bjFont;
+    animation: appear 0.3s linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;;
+
+  }
+
+  .contact-card-text{
+    position: absolute;
+    left: 72%;
+    top: 141%;
+    transform: translateX(-50%);
+    font-weight: 600;
+    position: absolute;
+    font-size: 260px;
+white-space: nowrap;
+    color: rgba(0, 0, 0, 0.2);
+    font-family: bjFont;
+    animation: appear 0.3s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
+
+  .projects-text-bj{
+    position: absolute;
+    left: 52%;
+    top: 210%;
+    transform: translateX(-50%);
+    font-weight: 600;
+    position: absolute;
+    font-size: 270px;
+white-space: nowrap;
+    color: rgba(0, 0, 0, 0.2);
+    font-family: bjFont;
+    animation: appear 0.3s linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+
+  }

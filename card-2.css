@@ -1,0 +1,202 @@
+/* Resume Section */
+.resume {
+    width: 30%;
+    height: 100%;
+    background-color: #F6F6F6;
+    border-radius: 12px;
+    position: absolute;
+    top: 0%;
+    left: 20%;
+    animation: card-left ease-in-out 0.3s forwards;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.contact-me {
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    right: 20%;
+    background-color: #F6F6F6;
+    top: 0%;
+    z-index: -1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    border-radius: 12px;
+    animation: card-right ease-in-out 0.3s forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+/* Header Section */
+.card-header {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.card-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.card-header p {
+    margin: 5px 0 0;
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+/* Content Section */
+.card-content {
+    padding: 20px;
+    color: #000;
+}
+
+.card-content h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: #333;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.card-content p,
+.card-content ul {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    list-style: none;
+}
+
+.card-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px;
+}
+
+.card-content ul li {
+    background: #eaeaea;
+    padding: 5px 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+/* Resume Download Button */
+.cv {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 1%;
+}
+
+.cv:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+@keyframes card-right {
+    from {
+        right: 0%;
+    }
+    to {
+        right: 12%; /* Match the .contact-me right property */
+    }
+}
+
+@keyframes card-left {
+    from {
+        left: 0%;
+    }
+    to {
+        left: 12%; /* Match the .resume left property */
+    }
+}
+
+
+
+.contact-title {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 11.5px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    font-size: 20px;
+}
+
+.contact-info {
+    padding: 20px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-info li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: #F6F6F6;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+
+.contact-info li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.contact-info .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-info .social-media a {
+    padding: 8px;
+    border-radius: 50%;
+    transition: background-color 0.2s ease;
+}
+
+.contact-info .social-media a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Make text responsive */
+@media (max-width: 768px) {
+    .contact-info li {
+        font-size: 0.9rem;
+    }
+    
+    .contact-info svg {
+        width: 20px;
+        height: 20px;
+    }
+}

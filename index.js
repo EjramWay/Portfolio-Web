@@ -1,19 +1,45 @@
+// Use sessionStorage to track if this is the first visit
 function createLoadingMask() {
- document.body.classList.add('loading');
-   const mask = document.createElement('div');
+    // Check if this is the first visit in this session
+    if (sessionStorage.getItem('hasVisited')) {
+        // If not first visit, only run loading mask if page is being closed/opened
+        if (!document.hidden) {
+            return;
+        }
+    } else {
+        // Mark that user has visited in this session
+        sessionStorage.setItem('hasVisited', 'true');
+    }
+
+    document.body.classList.add('loading');
+    const mask = document.createElement('div');
     mask.className = 'page-mask';
     document.body.appendChild(mask);
 
- setTimeout(() => {
-  document.body.classList.add('loaded');
-  document.body.classList.remove('loading');
-   setTimeout(() => mask.remove(), 6000);
-    changeContent('work');
- }, 6000);
+    setTimeout(() => {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loading');
+        setTimeout(() => mask.remove(), 6000);
+        changeContent('work');
+    }, 6000);
 }
 
-window.addEventListener('load', createLoadingMask);
-window.addEventListener('beforeunload', createLoadingMask);
+// Only run on initial page load and page visibility changes
+window.addEventListener('load', () => {
+    // Check if this is the first visit
+    if (!sessionStorage.getItem('hasVisited')) {
+        createLoadingMask();
+    }
+});
+
+// Handle page visibility changes (closing/opening)
+document.addEventListener('visibilitychange', () => {
+    if (document.hidden) {
+        // Page is being hidden/closed
+        createLoadingMask();
+    }
+});
+
 
 document.addEventListener('DOMContentLoaded', () => {
     changeContent('work');
@@ -53,7 +79,7 @@ function changeContent(type) {
         bj_deco.style.background = "linear-gradient(90deg, rgba(199,199,199,1) 0%, rgba(162,162,162,1) 0%, rgba(255,255,255,1) 89%, rgba(255,255,255,1) 100%)";
         bj_deco2.style.backgroundImage = "linear-gradient(90deg, rgba(199,199,199,1) 0%, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 8%, rgba(138,138,138,1) 74%)";
 
-        title.style.backgroundImage = "linear-gradient(135deg, rgba(163,163,163,1) 12%, rgba(0,0,0,1) 46%)";
+        workTitle.style.backgroundImage = "linear-gradient(135deg, rgba(116,116,116,1) 10%, rgba(0,0,0,1) 31%)";
     } else if (type === 'social') {
         socialContent.classList.add('active');
         socialContent.classList.remove('hidden');
@@ -64,7 +90,9 @@ function changeContent(type) {
         void socialTitle.offsetWidth;
         socialTitle.classList.add('animate');
 
-        credit.style.cssText = 'bottom: -158%;';
+     
+        credit.style.cssText = 'bottom: -110%;';
+
         projectText.classList.add('hidden');
         workButton.style.cssText = 'background-color: transparent; color: rgba(0, 0, 0, 0.5)';
         socialButton.style.cssText = "box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.5); background-color: #FFFFFF; color: #000;";

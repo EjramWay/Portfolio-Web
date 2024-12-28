@@ -1,5 +1,11 @@
 .box {
-    width: 20vw;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 70%;
+    width: 60vw;
     height: 10vh;
-    background-color: red;
+    color: black;
+    font-size: 40px;
+    font-weight: 600;
 }

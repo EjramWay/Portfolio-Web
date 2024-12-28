@@ -9,7 +9,8 @@
     background-color: #F6F6F6;
     margin: 0;
     overflow-x: hidden;
-    backdrop-filter: blur(1)
+    backdrop-filter: blur(1);
+font-family: sans-serif;
     
   }
 
@@ -17,6 +18,7 @@
   
   .top-part {
     z-index: 20;
+    z-index: 99999;
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
@@ -46,24 +48,10 @@ font-family: var(--font-body);
   }
   
 
-  .trial2{
-    position: absolute;
-    left: 50%;
-    top: 59%;
-    transform: translateX(-50%);
-    position: absolute;
-    font-size: 500px;
 
-    color: rgba(0, 0, 0, 0.2);
-    font-family: bjFont;
-    animation:  appear 0.3s linear;
-    animation-timeline: view();
-    animation-range: entry 1% cover 1%;
-
-  }
 
   .top-part-background {
-    z-index: 22;
+    z-index: 99999;
     background-color: #F5F5F5;
     border-radius: 30px;
     justify-content: center;

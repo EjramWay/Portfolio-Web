@@ -25,10 +25,10 @@
   /* main button styles */
   .main {
     position: fixed;
-    margin-left: 1%;
-    margin-top: 0.2%;
+    margin-left: 1.5%;
+    margin-top: 0.11%;
     border-radius: 50px;
-    width: 5.1vw;
+    width: 4.7vw;
     height: 6.1vh;
     color: black;
     font-size: 20px;
@@ -49,12 +49,12 @@
   .more {
     position: fixed;
     margin-left: 5.8%;
-    margin-top: 0.2%;
+    margin-top: 0.11%;
     border-radius: 50px;
     color: black;
     font-size: 20px;
     text-align: center;
-    width: 5.1vw;
+    width: 4.7vw;
     height: 6.1vh;
     display: flex;
     border: none;

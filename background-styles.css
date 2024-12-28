@@ -99,19 +99,6 @@ body::before {
     src: url(Panchang-Variable.ttf);
 }
 
-  .trial {
-    font-size: 300px;
-    font-family: bjFont;
-    position: absolute;
-    left: 50%;
-    top: 20%;
-    transform: translateX(-50%);
-    white-space: nowrap;
-    z-index: -1;
-    color: rgba(0, 0, 0, 0.10);
-    
-    animation: fadeOutOnLoad 1s ease-out;
-  }
   
 .page-mask {
     position: fixed;
@@ -120,7 +107,7 @@ body::before {
     width: 100vw;
     height: 100vh;
     background-color: #000000;
-    z-index: 9999;
+    z-index: 9999999;
     mask-image: url(bj.gif);
     -webkit-mask-image: url(bj.gif);
     mask-position: center;
